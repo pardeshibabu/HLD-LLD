@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	adaptor "hld_lld/adaptor_dp"
+	adaptor "hld_lld/structural_dp/adaptor_dp"
 )
 
 func main() {
