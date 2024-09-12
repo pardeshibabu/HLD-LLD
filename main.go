@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	statedp "hld_lld/behaviour_dp/state_dp"
 )
 
 func main() {
@@ -21,11 +20,24 @@ func main() {
 	// c.ChargeMobile(ad)
 
 	// ------------------------- State Design Pattern ----------------------------
-	tvContext := statedp.GetContext() // Default state is Off
-	tvContext.GetState()              // Get the State as Off
+	// tvContext := statedp.GetContext() // Default state is Off
+	// tvContext.GetState()              // Get the State as Off
 
-	tvOn := statedp.TvOn{}
-	tvContext.SetState(&tvOn) // Change the current state as On
-	tvContext.GetState()      // Get the Stat as On
+	// tvOn := statedp.TvOn{}
+	// tvContext.SetState(&tvOn) // Change the current state as On
+	// tvContext.GetState()      // Get the Stat as On
+
+	// ------------------------- Strategy Design Pattern ----------------------------
+	// mySql := strategydp.MysqlConnection{URL: "Mysql is connected!"}
+	// dc := strategydp.DBConnection{
+	// 	DB: &mySql,
+	// }
+	// dc.DBConnect()
+
+	// mongo := strategydp.MongoDBlConnection{URL: "Mongo is connected!"}
+	// dc2 := strategydp.DBConnection{
+	// 	DB: &mongo,
+	// }
+	// dc2.DBConnect()
 
 }
