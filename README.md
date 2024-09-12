@@ -1,2 +1,2 @@
-# High and Low level design pattern and theif implementation in Golang
+# High and Low level design pattern and their implementation in Golang
 
